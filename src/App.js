@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "./components/Nav.js";
 import Jumbotron from "./components/Jumbotron.js";
+import Features from "./components/Features.js";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Nav />
       </div>
       <Jumbotron />
+      <Features />
     </div>
   );
 }
