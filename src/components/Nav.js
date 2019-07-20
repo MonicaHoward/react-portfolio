@@ -8,7 +8,7 @@ class Nav extends Component {
           <h3>MONICA HOWARD</h3>
           <p>Full Stack</p>
         </div>
-        <div className="col-md-6   top-nav-trans ">
+        <div className="col-md-6   top-nav-trans">
           <ul className="nav">
             <li className="nav-item">
               <a className="nav-link active" href="/">
