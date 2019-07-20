@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./feature.css";
-import "./linkedin-logo.png";
 
 class Features extends Component {
   render() {
