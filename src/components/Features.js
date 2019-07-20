@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import "./feature.css";
+import "./linkedin-logo.png";
 
 class Features extends Component {
   render() {
@@ -23,18 +25,15 @@ class Features extends Component {
         </ul>
         <div class="container">
           <div class="card-columns">
-            <div class="card">
-              <img src="/" class="card-img-top" alt="alt" />
+            <div class="card trans-grad">
               <div class="card-body">
-                <h5 class="card-title">Card title that wraps to a new line</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
+                <img
+                  src="https://image.flaticon.com/icons/svg/87/87396.svg"
+                  alt="twitter"
+                />
               </div>
             </div>
-            <div class="card p-3">
+            {/* <div class="card p-3">
               <blockquote class="blockquote mb-0 card-body">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -116,7 +115,7 @@ class Features extends Component {
                   <small class="text-muted">Last updated 3 mins ago</small>
                 </p>
               </div>
-            </div>
+            </div>*/}
           </div>
         </div>
       </div>
