@@ -9,9 +9,9 @@ function App() {
     <div className="container-fluid">
       <div className="bg" />
       <div className="content">
-        <div className="container">
-          <Nav />
-        </div>
+        {/* <div className="container"> */}
+        <Nav />
+        {/* </div> */}
         <Jumbotron />
         <Features />
       </div>
