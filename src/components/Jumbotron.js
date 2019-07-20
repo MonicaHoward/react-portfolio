@@ -1,9 +1,10 @@
 import React from "react";
+import "./jumbotron.css";
 
 const Jumbotron = () => {
   return (
     <div>
-      <div className="jumbotron jumbotron-fluid">
+      <div className="jumbotron jumbotron-fluid dark-trans">
         <div className="container">
           <h1 className="display-4">
             Hi, I'm Monica Howard, a full stack developer.
