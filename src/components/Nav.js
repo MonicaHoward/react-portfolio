@@ -12,8 +12,8 @@ class Nav extends Component {
         <div className="col-md-8 title-trans p-4 ">
           <h3>MONICA HOWARD</h3>
         </div>
-        <div className="col-md-4   top-nav-trans p-4 text-info">
-          <ul className="nav justify-content-end ">
+        <div className="col-md-4   top-nav-trans p-4 ">
+          <ul className="nav d-flex justify-content-between">
             <li className="nav-item  ">
               <a className="nav-link active " href="/">
                 Home
