@@ -1,31 +1,35 @@
 import React, { Component } from "react";
 import "./nav.css";
+
 class Nav extends Component {
   render() {
     return (
-      <div className="nav row p-4" id="navbar">
-        <div className="col-md-6 title-trans ">
+      <div
+        className="nav row p-4  
+      "
+        id="navbar"
+      >
+        <div className="col-md-8 title-trans p-4 ">
           <h3>MONICA HOWARD</h3>
-          <p>Full Stack</p>
         </div>
-        <div className="col-md-6   top-nav-trans">
-          <ul className="nav">
-            <li className="nav-item">
-              <a className="nav-link active" href="/">
+        <div className="col-md-4   top-nav-trans p-4 text-info">
+          <ul className="nav justify-content-end ">
+            <li className="nav-item  ">
+              <a className="nav-link active " href="/">
                 Home
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item ">
               <a className="nav-link" href="/">
                 About
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item ">
               <a className="nav-link" href="/">
                 Portfolio
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item ">
               <a
                 className="nav-link"
                 href="/"
