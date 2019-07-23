@@ -4,22 +4,20 @@ import "./nav.css";
 class Nav extends Component {
   render() {
     return (
-      <div
-        className="nav row p-4  
-      "
-        id="navbar"
-      >
+      <div className="nav row p-4" id="navbar">
         <div className="col-md-8 title-trans p-4 ">
-          <h3>MONICA HOWARD</h3>
+          <h3>MH</h3>
         </div>
+
         <div className="col-md-4   top-nav-trans p-4 ">
-          <ul className="nav d-flex justify-content-between">
+          <div className="grid" />
+          <ul className="nav d-flex justify-content-end">
             <li className="nav-item  ">
-              <a className="nav-link active " href="/">
+              <a className="nav-link active linkStyles" href="/">
                 Home
               </a>
             </li>
-            <li className="nav-item ">
+            {/* <li className="nav-item ">
               <a className="nav-link" href="/">
                 About
               </a>
@@ -38,7 +36,7 @@ class Nav extends Component {
               >
                 Resume
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

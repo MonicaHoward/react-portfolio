@@ -1,19 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand|Roboto+Mono&display=swap");
+* {
+  font-family: "Quicksand", sans-serif;
+}
 .title-trans {
   background: radial-gradient(rgba(4, 44, 56, 0.856), rgba(41, 35, 35, 0.504));
   color: white;
   position: relative;
   border-right: 1px solid gray;
+  box-shadow: 2px 2px 0px rgba(41, 35, 35, 0.7);
   /* clip-path: polygon(0 0, 100% 2%, 95% 100%, 0% 100%);
   margin-right: -3%; */
 }
 
 .top-nav-trans {
-  background: radial-gradient(rgba(4, 44, 56, 0.856), rgba(41, 35, 35, 0.504));
+  background: radial-gradient(rgba(25, 29, 31, 0.456), rgba(41, 35, 35, 0.504));
   color: white;
   position: relative;
+  box-shadow: 2px 2px 1px rgb(41, 35, 35, 0.5);
   /* clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%); */
 }
 
 .nav-card {
   border: 1px solid gray;
+}
+.linkStyles {
+  color: rgb(247, 113, 153);
+  font-size: 1.35;
 }
