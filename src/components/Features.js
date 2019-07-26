@@ -1,17 +1,35 @@
-import React, { Component } from "react";
+import React from "react";
 import "./feature.css";
 
-class Features extends Component {
-  render() {
-    return (
-      <div className="feature-container">
-        <ul className="nav justify-content-center">
-          <li className="nav-item">
-            <a className="nav-link active linkStyles" href="/ ">
-              CHECK IT OUT!
-            </a>
-          </li>
-          {/* <li className="nav-item">
+import GithubLogo from "../assets/images/GitHub.png";
+import LinkedinLogo from "../assets/images/LinkedIn.png";
+import EmailLogo from "../assets/images/Email.png";
+
+const Feature = ({ type, imageSrc, msg, children }) => {
+  return (
+    <div
+      className="card text-center col-md-4
+    /> trans-grad"
+    >
+      <div className="card-header">{type}</div>
+      <div className="card-body">
+        <img className="imageSize" src={imageSrc} alt={type} />
+      </div>
+      <div className="card-footer text-muted">{msg}</div>
+    </div>
+  );
+};
+
+const Features = () => {
+  return (
+    <div className="feature-container">
+      <ul className="nav justify-content-center">
+        <li className="nav-item">
+          <a className="nav-link active linkStyles" href="/ ">
+            CHECK IT OUT!
+          </a>
+        </li>
+        {/* <li className="nav-item">
             <a className="nav-link" href="/">
               Social
             </a>
@@ -21,8 +39,23 @@ class Features extends Component {
               Other
             </a>
           </li> */}
-        </ul>
-        <div className="row">
+      </ul>
+      <div class="row justify-content-center">
+        <div class="card-deck">
+          <Feature
+            type="LINKEDIN"
+            imageSrc={LinkedinLogo}
+            msg="Let's Connect!"
+          />
+          <Feature
+            type="GITHUB"
+            imageSrc={GithubLogo}
+            msg="131,000 line of code & counting"
+          />
+          <Feature type="EMAIL" imageSrc={EmailLogo} msg="I said what?" />
+        </div>
+
+        {/* <div className="row">
           <div className="card-deck">
             <div className="card trans-grad">
               <div className="card-body">
@@ -37,41 +70,11 @@ class Features extends Component {
                 </p>
               </div>
             </div>
-            <div className="card trans-grad">
-              <img
-                src="https://via.placeholder.com/100x200"
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  This card has supporting text below as a natural lead-in to
-                  additional content.
-                </p>
-                <p className="card-text">
-                  <small className="text-muted">Last updated 3 mins ago</small>
-                </p>
-              </div>
-            </div>
-            <div className="card trans-grad">
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This card has even longer
-                  content than the first to show that equal height action.
-                </p>
-                <p className="card-text">
-                  <small className="text-muted">Last updated 3 mins ago</small>
-                </p>
-              </div>
-            </div>
           </div>
-        </div>
+        </div> */}
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Features;
