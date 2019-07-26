@@ -6,13 +6,14 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid main">
       <div className="bg" />
       <div className="content">
         <Nav />
-        {/* </div> */}
         <Jumbotron />
-        <Features />
+        <div class="container m-8">
+          <Features />
+        </div>
       </div>
     </div>
   );
