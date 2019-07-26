@@ -11,7 +11,7 @@ function App() {
       <div className="content">
         <Nav />
         <Jumbotron />
-        <div class="container m-8">
+        <div className="container m-8">
           <Features />
         </div>
       </div>
