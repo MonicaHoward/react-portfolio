@@ -5,17 +5,16 @@ import GithubLogo from "../assets/images/GitHub.png";
 import LinkedinLogo from "../assets/images/LinkedIn.png";
 import EmailLogo from "../assets/images/Email.png";
 
-const Feature = ({ type, imageSrc, msg, children }) => {
+const Feature = ({ type, imageSrc, link, msg, children }) => {
   return (
-    <div
-      className="card text-center col-md-4
-    /> trans-grad"
-    >
-      <div className="card-header">{type}</div>
-      <div className="card-body">
-        <img className="imageSize" src={imageSrc} alt={type} />
-      </div>
-      <div className="card-footer text-muted">{msg}</div>
+    <div className="card text-center col-md-4 trans-grad">
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <div className="card-header">{type}</div>
+        <div className="card-body">
+          <img className="imageSize" src={imageSrc} alt={type} />
+        </div>
+        <div className="card-footer text-muted">{msg}</div>
+      </a>
     </div>
   );
 };
@@ -40,19 +39,26 @@ const Features = () => {
             </a>
           </li> */}
       </ul>
-      <div class="row justify-content-center">
-        <div class="card-deck">
+      <div className="row justify-content-center">
+        <div className="card-deck">
           <Feature
             type="LINKEDIN"
+            link="https://www.linkedin.com/in/monica-howard/"
             imageSrc={LinkedinLogo}
             msg="Let's Connect!"
           />
           <Feature
             type="GITHUB"
+            link="https://github.com/MonicaHoward"
             imageSrc={GithubLogo}
-            msg="131,000 line of code & counting"
+            msg="The road to 2 million lines of code"
           />
-          <Feature type="EMAIL" imageSrc={EmailLogo} msg="I said what?" />
+          <Feature
+            type="EMAIL"
+            link="mailto:hi@monicahoward.net"
+            imageSrc={EmailLogo}
+            msg="Holla at me!"
+          />
         </div>
 
         {/* <div className="row">

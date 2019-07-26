@@ -1,10 +1,25 @@
+* {
+  color: #fff;
+  text-decoration-style: none;
+  text-decoration: none;
+}
 .feature-container {
   height: 100%;
 }
+a:visited {
+  color: #ccc;
+}
 .trans-grad {
-  background: rgba(41, 35, 35, 0.504);
+  background: rgba(41, 35, 35, 0.304);
+  border: 1px solid white;
   color: white;
   display: inline-block;
+  text-decoration-style: none;
+}
+.trans-grad:hover {
+  background: rgba(41, 35, 35, 0.604);
+
+  border: 1px solid rgb(247, 113, 153);
 }
 
 .imageSize {
